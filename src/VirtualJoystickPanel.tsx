@@ -175,7 +175,7 @@ function VirtualJoystickPanel({ context }: { context: PanelExtensionContext }): 
     const angularVec: Vector3 = {
       x: 0,
       y: 0,
-      z: angularSpeed,
+      z: angularSpeed * (-1),
     };
 
     let message: geometry_msgs__Twist | geometry_msgs__TwistStamped;
